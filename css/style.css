@@ -14,6 +14,10 @@ footer {
     
 }
 
+address {
+    color: ghostwhite;
+}
+
 h1 {
     color: coral;
 }
@@ -29,6 +33,10 @@ p {
 
 img {
     width: 50px;
+}
+
+img#filler {
+    width: 2000px;
 }
 
 nav {
