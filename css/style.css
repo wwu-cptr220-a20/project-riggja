@@ -9,9 +9,7 @@ section {
 }
 
 footer {
-    background-color: black;
-    padding: 2em;
-    
+    display: none;
 }
 
 address {
@@ -19,7 +17,9 @@ address {
 }
 
 h1 {
-    color: coral;
+    color: rgb(255, 179, 80);
+    animation-duration: 2s;
+    animation-name: slidein;
 }
 
 h2 {
@@ -29,6 +29,7 @@ h2 {
 
 p {
     color: ghostwhite;
+    font-size: .75em;
 }
 
 img {
@@ -72,12 +73,13 @@ ul#list li{
 }
 
 ul#menu li{
-    display: inline;
+    display: none;
 }
 
 ul#menu li:hover {
     color:#09ee09;
     border-bottom: .2rem solid  #09ee09;
+    
 }
 
 ul {
@@ -86,4 +88,38 @@ ul {
     display: inline-block;
 }
 
+@media (min-width:768px) {
+    ul#menu li{
+        display: inline;
+        
+    }
+
+    div#smallmenu{
+        display: none;
+    }
+
+    p{
+        font-size: 1em;
+    }
+
+    footer {
+        display: block;
+        background-color: black;
+        padding: 2em;
+        
+    }
+
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
 
