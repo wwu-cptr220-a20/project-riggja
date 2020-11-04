@@ -1,11 +1,17 @@
 html {
     background-color: black;
+    height: 100%;
 }
 
 section {
     padding: 2em;
     padding-top: 7em;
     background-color: black;
+}
+
+section#cards {
+    flex: 1;
+    padding: 1em;
 }
 
 footer {
@@ -38,6 +44,10 @@ img {
 
 img#filler {
     width: 2000px;
+}
+
+img#cardimg {
+    width: 300px;
 }
 
 nav {
@@ -86,6 +96,31 @@ ul {
     margin: 0;
     padding: 0;
     display: inline-block;
+}
+
+.cards {
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.card {
+    flex: 0 0 300px;
+    background-color: blueviolet;
+    margin: .5rem;
+    margin-left: 5em;
+    margin-right: 5em;
+    transition: background-color 2s, transform 2s;
+}
+
+.card:hover{
+    background-color: chartreuse;
+    
+    transform: rotate(360deg);
+}
+
+div {
+    display: flex;
 }
 
 @media (min-width:768px) {
